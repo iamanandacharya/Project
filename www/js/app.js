@@ -44,7 +44,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   .state('login',{
     url:'/login',
-    templateUrl:'animated_login_screen.html',
+    templateUrl:'templates/animated_login_screen.html',
     controller:'LoginCtrl'
    })
 
