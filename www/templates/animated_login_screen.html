@@ -1,6 +1,9 @@
 <ion-view view-title="Login" name="login-view">
-  <ion-content >
+			<div id="particles-js">
+</div>
+  	<ion-content >	
 <div class="container"  controller='LoginCtrl'>
+	
 	<div id="login-box">
 		<div class="logo">
 			<img src="photo/photo.png" class="img img-responsive img-circle center-block"/>
@@ -8,20 +11,19 @@
 		</div><!-- /.logo -->
 
 		<div class="controls">
+     
+     <form action="">       
+		   	
+ 		<input type="text" name="username" placeholder="Username" ng-model="data.username" class="form-control" />
+			<input type="password" name="password" placeholder="Password" ng-model="data.password" class="form-control" />
+				<button  class="btn button btn-default btn-block btn-custom" ng-click="login()">Login</button>
+			</form>	
+     
+		<button type="button" class="button btn btn-default btn-block btn-custom">Forgot Password</button>
             
-		 <div class="list list-inset">
-       	<label class="item item-input">
- 			<input type="text" name="username" placeholder="Username" ng-model="data.username" class="form-control" />
-			 </label>
-  			<label class="item item-input">
-  		<input type="password" name="password" placeholder="Password" ng-model="data.password" class="form-control" />
-			</label>
-      	</div>
-			<button  class="btn button btn-default btn-block btn-custom" ng-click="login()">Login</button>
-            <form action="#">
-            <button type="button" class="button btn btn-default btn-block btn-custom">Forgot Password</button>
-            </form>
           
+
+	
         </div><!-- /.controls -->
 		
 		<div align="center">
@@ -29,20 +31,22 @@
 			   <br/>
 		</div>
 	
-			<div style="float:right;width:83%">   <ul id="lpro">
-    <li><a href="https://www.facebook.com/" target="_blank"><div class="fbicon"></div><img id="social_me" src="photo/fb.png" alt="Facebook"></a>
+			<div align="center" >  <ul id="lpro">
+    <li><a href="https://www.facebook.com/" target="_blank"><div class="fbicon"><img id="social_me" src="photo/fb.png" alt="Facebook"></div></a>
     &nbsp;</li>
-    <li><a href="https://www.linkedin.com/" target="_blank"><div class="linkedin_amandasopkin"></div><img id="social_me" src="photo/g+.png" alt="Linked In"></a>
+    <li><a href="https://www.linkedin.com/" target="_blank"><div class="linkedin_amandasopkin"><img id="social_me" src="photo/g+.png" alt="Linked In"></div></a>
     &nbsp;</li>
-    <li><a href="https://plus.google.com/" target="_blank"><img id="social_me" src="photo/qq1.jpg" alt="Google Plus"></a>
+    <li><a href="https://plus.google.com/" target="_blank"><div class="fbicon"><img id="social_me" src="photo/qq1.jpg" alt="Google Plus"></div></a>
     &nbsp;</li>
+		
 </ul>
 </div>
+
 	</div><!-- /#login-box -->
-	
+
 </div><!-- /.container -->
-<div id="particles-js">
-</div>
+
   </ion-content>
+
 </ion-view>
 
