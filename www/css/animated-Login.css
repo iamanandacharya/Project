@@ -3,7 +3,7 @@
 body, html {
 	height: 100%;
 	background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
-	background:#5DADE2   ;
+	
 	position:relative;
 }
 #login-box {
@@ -11,17 +11,17 @@ body, html {
 	top: 25%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 350px;
+	width: 270px;
+	height:550px;
 	margin: 0 auto;
-	border: 1px solid black;
-	background: rgba(48, 46, 45, 1);
-	min-height: 250px;
+	border: 1px solid #d09cd9;
+	
+	min-height: 150px;
 	padding: 20px;
 	z-index: 9999;border-radius: 25px;padding: 20px; 
 }
 #login-box .logo .logo-caption {
 	font-family: 'Poiret One', cursive;
-	color: white;
 	text-align: center;
 	margin-bottom: 0px;
 }
@@ -38,6 +38,10 @@ body, html {
 	border: 0px;
 	color: white;
 	font-family: 'Nunito', sans-serif;
+	padding: 5px;
+	  width: 250px;
+    padding: 10px;
+   box-sizing: border-box;
 }
 #login-box .controls input:focus {
 	box-shadow: none;
@@ -52,10 +56,11 @@ body, html {
 }
 #login-box button.btn-custom {
 	border-radius: 2px;
-    margin: 50px;
-	margin-top: 20px;
-    margin-bottom: 10px;
-    width:200px;
+    margin: 52px;
+	margin-top: 35px;
+    margin-bottom: 2px;
+    width:150px;
+	height: 40px;
 	background:#ff5252;
 	border-color: rgba(48, 46, 45, 1);
 	color: white;
@@ -72,10 +77,32 @@ body, html {
 }
 
 ul li {
-    display:inline-block;
+    display:inline-flex;
+	
+}
+.un{
+	border-radius: 2px;
+	margin-top: 10px;
+    margin-bottom: 2px;
+    width:229px;
+	height: 40px;
+	color: white;
+	font-family: 'Nunito', sans-serif;
+	
 }
 
 h5, .h5 {
     font-size: 14px;
     color: #428bca;
+}
+#login-box .write{
+	width:265px;
+	margin:0 auto;
+	text-align: center;
+
+}
+#login-box .social_box{
+	width:262px;
+	margin:0 auto;
+	align-items: center;
 }

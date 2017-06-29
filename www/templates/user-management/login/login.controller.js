@@ -3,7 +3,7 @@ angular.module('starter.controllers')
     $scope.data = {};
     $scope.login = function () {
       LoginService.loginUser($scope.data.username, $scope.data.password).success(function (data) {
-        $state.go('tab.dash');
+        $state.go('tab-dash');
 
       }).error(function (data) {
         var alertpop = $ionicPopup.alert({
@@ -12,5 +12,4 @@ angular.module('starter.controllers')
         });
       });
     }
-
   });

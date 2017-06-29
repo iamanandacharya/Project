@@ -1,4 +1,4 @@
-angular.module('starter.services', [])
+angular.module("starter.services", [])
 
 //$q service helps in asynchronous execution of functions by returning a “promise” from the function call
 //What exactly is a Promise?
