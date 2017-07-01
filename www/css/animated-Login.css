@@ -1,108 +1,35 @@
 
 
-body, html {
-	height: 100%;
-	background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
-	
-	position:relative;
-}
-#login-box {
-	position: absolute;
-	top: 25%;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 270px;
-	height:550px;
-	margin: 0 auto;
-	border: 1px solid #d09cd9;
-	
-	min-height: 150px;
-	padding: 20px;
-	z-index: 9999;border-radius: 25px;padding: 20px; 
-}
-#login-box .logo .logo-caption {
-	font-family: 'Poiret One', cursive;
-	text-align: center;
-	margin-bottom: 0px;
-}
-#login-box .logo .tweak {
-	color: #ff5252;
-}
-#login-box .controls {
-	padding-top: 30px;
-}
 
-#login-box .controls input {
-	border-radius: 0px;
-	background: rgb(98, 96, 96);
-	border: 0px;
-	color: white;
-	font-family: 'Nunito', sans-serif;
-	padding: 5px;
-	  width: 250px;
-    padding: 10px;
-   box-sizing: border-box;
-}
-#login-box .controls input:focus {
-	box-shadow: none;
-}
-#login-box .controls input:first-child {
-	border-top-left-radius: 2px;
-	border-top-right-radius: 2px;
-}
-#login-box .controls input:last-child {
-	border-bottom-left-radius: 2px;
-	border-bottom-right-radius: 2px;
-}
-#login-box button.btn-custom {
-	border-radius: 2px;
-    margin: 52px;
-	margin-top: 35px;
-    margin-bottom: 2px;
-    width:150px;
-	height: 40px;
-	background:#ff5252;
-	border-color: rgba(48, 46, 45, 1);
-	color: white;
-	font-family: 'Nunito', sans-serif;
-}
-#login-box button.btn-custom:hover{
-	-webkit-transition: all 500ms ease;
-	-moz-transition: all 500ms ease;
-	-ms-transition: all 500ms ease;
-	-o-transition: all 500ms ease;
-	transition: all 500ms ease;
-	background: rgba(48, 46, 45, 1);
-	border-color: #ff5252;
-}
 
 ul li {
     display:inline-flex;
 	
 }
+
+
+h5, .h5 {
+    font-size: 14px;
+    color: ;
+}
+ .write{
+	width:225px;
+	text-align: center;
+
+}
+.social_box{
+	width:185px;
+	margin:2 auto;
+	align-items: center;
+	
+}
 .un{
 	border-radius: 2px;
 	margin-top: 10px;
-    margin-bottom: 2px;
+    margin-bottom: 20px;
     width:229px;
 	height: 40px;
 	color: white;
 	font-family: 'Nunito', sans-serif;
 	
-}
-
-h5, .h5 {
-    font-size: 14px;
-    color: #428bca;
-}
-#login-box .write{
-	width:265px;
-	margin:0 auto;
-	text-align: center;
-
-}
-#login-box .social_box{
-	width:262px;
-	margin:0 auto;
-	align-items: center;
 }

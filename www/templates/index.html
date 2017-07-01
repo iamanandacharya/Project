@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+ 
+
+    <link rel="manifest" href="manifest.json">
+  
+   
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <!--<link href='css/roboto.css' media='screen' rel='stylesheet'>
+    <link href='css/mb-font.css' media='screen' rel='stylesheet'>-->
+   
+    
+     <link href="css/animated-Login.css" rel="stylesheet">
+  	<link href="css/new.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+ 
+ 
+    <!--<link rel="stylesheet" media="screen" href="webpack/font-icons-46e2fcfcd08e004748897c1b24829140.css" />
+    
+ <link href="css/splash.min.css" rel="stylesheet" >
+ <link href="css/homestyle.css" rel="stylesheet" >
+    <link rel="stylesheet" media="screen" href="webpack/preview-30aed20c447f7a2493ab2ff06516fb0c.css" />
+   <link rel="stylesheet" media="screen" href="css/sharing-0482f850df4a71f70fdbb96d92eda273.css">
+-->
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <script src="lib/particles.js/dist/particles.min.js"></script>
+    <script src="lib/particles.js/dist/particles.js"></script>
+    <script src="js/animated.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    
+    <script src="templates/tab-account/tab-account.controller.js"></script>
+    <script src="templates/tab-account/tab-account.route.js"></script>
+
+    <script src="templates/tab-chats/tab-chats.controller.js"></script>
+    <script src="templates/tab-chats/tab-chats.route.js"></script>
+
+    <script src="templates/tab-chats/chat-details/chat-details.route.js"></script>
+    <script src="templates/tab-chats/chat-details/chat-details.controller.js"></script>
+
+    <script src="templates/tab-dash/tab-dash.controller.js"></script>
+    <script src="templates/tab-dash/tab-dash.route.js"></script>
+
+    <script src="templates/user-management/registration/register.controller.js"></script>
+    <script src="templates/user-management/registration/register.route.js"></script>
+    
+    <script src="templates/user-management/login/login.controller.js"></script>
+    <script src="templates/user-management/login/login.route.js"></script>
+   
+  
+    <!--<script src="templates/user-management/home/home-page.controller.js"></script>
+    <script src="templates/user-management/home/homepage.route.js"></script>
+    <script src="lib/home.min/index.js"> </script>
+    <script src="lib/splash.min/index.js"></script>
+    <script src="lib/pack2.min/index.js"></script>
+
+    <script src="lib/manifest-58ec62d6570f2b1c0dea/index.js"></script>
+    <script src="lib/vendor-508813dfbb40d84b5843/index.js"></script>
+    <script src="lib/sharing-b61427ad8d2d0aa0143d9e0bd3660765/index.js"></script>
+    <script src="lib/preview-d4e0b01e9503cb2bf9a3/index.js"></script>
+    <script src="lib/pack.min/index.js"></script>-->
+
+
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+  
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+        
+     <ion-nav-view>
+        <ion-content class="padding" name="mainContent">          
+        </ion-content>
+    </ion-nav-view>
+  </body>
+</html>

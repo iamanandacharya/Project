@@ -5,8 +5,8 @@ body.login {
   padding-top: 0;
 }
 body.login #content {
-  max-width: 760px;
-  margin: auto;
+  
+  margin: 0;
   position: absolute;
   top: 0;
   left: 0;
@@ -14,8 +14,9 @@ body.login #content {
   right: 0;
 }
 body.login .lock-container {
-  margin: auto;
+  margin: inherit;
   width: 300px;
+  padding:20px;
 }
 @media (min-width: 480px) {
   body.login .lock-container {
@@ -29,11 +30,11 @@ body.login .lock-container {
 }
 body.login .lock-container .panel {
   max-width: 300px !important;
-  background: #fff;
+  background: #d09cd9 ;
   position: relative;
 }
 body.login .lock-container .panel img {
-  margin: 20px 0 10px;
+  margin: 0px 0 10px;
 }
 body.login .lock-container .panel .forgot-password {
   margin: 10px 0 0;
@@ -1097,9 +1098,7 @@ fieldset[disabled] .btn-inverse.active {
 .panel-body + hr {
   margin: 0;
 }
-.panel.panel-default > .split-vertical > .panel-heading {
-  border-bottom-color: #e2e9e6;
-}
+
 .tabbable {
   margin-bottom: 18px;
   border-radius: 2px;
@@ -15774,7 +15773,7 @@ ul.img-grid li img {
   display: none;
 }
 .paper-shadow:not(.navbar) {
-  z-index: 1;
+  /*z-index: 1;*/
 }
 .paper-shadow:before,
 .paper-shadow:after {
