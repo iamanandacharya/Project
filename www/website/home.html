@@ -3,7 +3,7 @@
   
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav">
+      <button type="button" class="navbar-toggle navbar-right collapsed " data-toggle="collapse" data-target="#main-nav">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -64,27 +64,37 @@
         <li class="dropdown" ng-class="{ 'active': $state.includes('website-pages') || $state.includes('website-forum') || $state.includes('website-blog') }">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li ui-sref-active="active"><a ui-sref="website-pages.home">Home page</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-pages.pricing">Pricing</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-pages.tutors">Tutors</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-pages.survey">Survey</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-forum.home">Forum Home</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-forum.category">Forum Category</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-forum.thread">Forum Thread</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-blog.listing">Blog Listing</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-blog.post">Blog Post</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-pages.contact">Contact</a></li>
+            <li ui-sref-active="active"><a ui-sref="website-pages.home">Home page</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="about-us">About-us</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.pricing">Pricing</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.tutors">Tutors</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.survey">Survey</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.home">Forum Home</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.category">Forum Category</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.thread">Forum Thread</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-blog.listing">Blog Listing</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-blog.post">Blog Post</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.contact">Contact</a></li></br>
           </ul>
         </li>
         <li class="dropdown" ng-class="{ 'active': $state.includes('website-courses') }">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Courses <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li ui-sref-active="active"><a ui-sref="website-courses.grid">Grid Directory</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-courses.list">List Directory</a></li>
-            <li ui-sref-active="active"><a ui-sref="website-courses.single">Single Course</a></li>
+            <li ui-sref-active="active"><a ui-sref="website-courses.grid">Marketing</a></li></br>           
+            <li ui-sref-active="active"><a ui-sref="website-courses.list">It-Software</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-courses.single">Language</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.home">Science</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.pricing">Health-Fitness</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.tutors">Business</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-pages.survey">Personal Development</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.home">Lifestyle</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.category">Photography</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-forum.thread">Design</a></li></br>
+            <li ui-sref-active="active"><a ui-sref="website-blog.listing">Music</a></li>
+         
           </ul>
         </li>
-        <li class="dropdown" ng-class="{ 'active': $state.includes('website-student') }">
+        <!--<li class="dropdown" ng-class="{ 'active': $state.includes('website-student') }">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Student <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li ui-sref-active="active"><a ui-sref="website-student.dashboard">Dashboard</a></li>
@@ -119,28 +129,26 @@
             <li ui-sref-active="active"><a ui-sref="essential.tables">Tables</a></li>
             <li ui-sref-active="active"><a ui-sref="essential.tabs">Tabs</a></li>
           </ul>
-        </li>
+        </li>-->
       </ul>
       <div class="navbar-right">
         <ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right">
           <!-- user -->
-          <li class="dropdown user">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="images/people/110/guy-6.jpg" alt="" class="img-circle" /> Bill<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-              <li ui-sref-active="active"><a ui-sref="website-student.dashboard"><i class="fa fa-bar-chart-o"></i> Dashboard</a></li>
-              <li ui-sref-active="active"><a ui-sref="website-student.courses"><i class="fa fa-mortar-board"></i> My Courses</a></li>
-              <li ui-sref-active="active"><a ui-sref="website-student.private-profile"><i class="fa fa-user"></i> Profile</a></li>
-              <li><a ui-sref="login"><i class="fa fa-sign-out"></i> Logout</a></li>
-            </ul>
-          </li>
           <!-- // END user -->
         </ul>
+        
+        <a  class="navbar-btn btn btn-primary" data-toggle="dropdown">Register<span class="caret"></span></a>
+         <ul class="dropdown-menu" role="menu">
+              <li ui-sref-active=""><a ui-sref="sign-up">I want to study</a></li></br>
+              <li ui-sref-active=""><a ui-sref="inst-sign-up">I want to teach</a></li></br>
+            </ul>
         <a ui-sref="login" class="navbar-btn btn btn-primary">Log In</a>
+        
       </div>
+ 
     </div>
     <!-- /.navbar-collapse -->
+    
 
   </div>
 </div>
@@ -174,7 +182,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel1 panel-default">
           <div class="panel-body">
             <div class="text-headline">Watch Courses Offline</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -192,7 +200,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel2 panel-default">
           <div class="panel-body">
             <div class="text-headline">Premium Support</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -210,7 +218,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel3 panel-default">
           <div class="panel-body">
             <div class="text-headline">Learn from Top Tutors</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -228,7 +236,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel4 panel-default">
           <div class="panel-body">
             <div class="text-headline">Lesson Source Files</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -246,7 +254,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel5 panel-default">
           <div class="panel-body">
             <div class="text-headline">Printed Diploma</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -264,7 +272,7 @@
         </div>
       </div>
       <div class="media-body">
-        <div class="panel panel-default">
+        <div class="panel6 panel-default">
           <div class="panel-body">
             <div class="text-headline">New Lessons Every Day</div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut culpa fugiat iusto, molestias nemo nostrum quia rerum temporibus voluptatum.</p>
@@ -746,7 +754,7 @@
       <div class="col-sm-6 col-md-3">
         <h4 class="text-headline text-light">Corporate</h4>
         <ul class="list-unstyled">
-          <li><a href="#">About the company</a></li>
+          <li><a ui-sref="about-us">About the company</a></li>
           <li><a href="#">Company offices</a></li>
           <li><a href="#">Partners</a></li>
           <li><a href="#">Terms of use</a></li>

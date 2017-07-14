@@ -6034,7 +6034,6 @@ require('./_sidebar-toggle');
 
                 $urlRouterProvider
                     .otherwise('/website-pages/home');
-
                 $stateProvider
                     .state('login', {
                         url: '/login',
@@ -6044,6 +6043,24 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
+
+                    .state('inst-sign-up', {
+                        url: '/inst-sign-up',
+                        templateUrl: 'website/inssign-up.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = 'login';
+                        }]
+                    })
+                    .state('about-us', {
+                        url: '/about-us',
+                        templateUrl: 'website/aboutus.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = '';
+                        }]
+                    })
+
                     .state('sign-up', {
                         url: '/sign-up',
                         templateUrl: 'website/sign-up.html',
