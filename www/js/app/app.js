@@ -6043,6 +6043,15 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
+                    $stateProvider
+                    .state('ionic-home', {
+                        url: '/ionic-home',
+                        templateUrl: 'website/ionic-home.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = 'login';
+                        }]
+                    })
 
                     .state('inst-sign-up', {
                         url: '/inst-sign-up',

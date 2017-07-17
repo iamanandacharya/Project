@@ -19,9 +19,9 @@ body.login #content {
   right: 0;
   }
 body.login .lock-container {
-  margin: 31px  ;
-  width: 300px;
-  padding:0px;
+margin: 31px;
+    width: 300px;
+    padding: 0px;
 }
 
 /* ---- particles.js container ---- */
@@ -15915,6 +15915,7 @@ ul.img-grid li img {
   -moz-appearance: none;
   appearance: none;
   height: auto;
+  margin:5px;
 }
 .form-control-material .form-control::-moz-placeholder {
   color: transparent;

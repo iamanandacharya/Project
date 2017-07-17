@@ -10,7 +10,7 @@ ul li {
 
 h5, .h5 {
     font-size: 14px;
-    
+    margin-left: 37px;
 }
  .write{
 	width:225px;
@@ -18,9 +18,9 @@ h5, .h5 {
 
 }
 .social_box{
-	width:185px;
-	margin:2 auto;
-	align-items: center;
+	width: 185px;
+    margin: 2px 2px 2px 19px;
+    align-items: center;
 	
 }
 .un{
