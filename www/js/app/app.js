@@ -6044,9 +6044,18 @@ require('./_sidebar-toggle');
                         }]
                     })
                     $stateProvider
-                    .state('ionic-home', {
-                        url: '/ionic-home',
-                        templateUrl: 'website/ionic-home.html',
+                    .state('Forgot-Password', {
+                        url: '/Forgot-Password',
+                        templateUrl: 'website/Forgot-Password.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = 'login';
+                        }]
+                    })
+                      $stateProvider
+                    .state('Forgot-Password-details', {
+                        url: '/Forgot-Password-detaild',
+                        templateUrl: 'website/Forgot-Password-details.html',
                         controller: ['$scope', function($scope){
                             $scope.app.settings.htmlClass = htmlClass.websiteLogin;
                             $scope.app.settings.bodyClass = 'login';
