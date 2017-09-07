@@ -164,35 +164,35 @@
           <form role="form" name="form" action="::$state.href('pages.dashboard')::" ">
                 <div class="form-group ">
                     <div class="form-control-material ">
-                        <input id="firstName " name="firstname" ng-model="firstname" type="text " class="form-control " placeholder="First Name" required>
+                        <input id="firstName " name="firstname" ng-model="c.firstname" type="text " class="form-control " placeholder="First Name" required>
                         <!--<span ng-show="form.firstname.$touched && form.firstname.$invalid"> First Name is required</span> -->
                         <label for="firstName ">First name</label>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="form-control-material ">
-                        <input id="lastName " type="text" ng-model="lastname" name="lastname" class="form-control " placeholder="Last Name" required>
+                        <input id="lastName " type="text" ng-model="c.lastname" name="lastname" class="form-control " placeholder="Last Name" required>
                           <!--<span ng-show="form.lastname.$touched && form.lastname.$invalid">Last Name is required</span>-->
                         <label for="lastName ">Last name</label>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="form-control-material ">
-                        <input id="email" ng-model="emailtype" name="emailtype" type="email" class="form-control " placeholder="Email" required>
-                        <!--<span ng-show="form.emailtype.$error.required && form.emailtype.$error.email">Email is required</span>-->
+                        <input id="email" ng-model="email" name="c.email" type="email" class="form-control " placeholder="Email" required>
+                        <!--<span ng-show="form.email.$error.required && form.email.$error.email">Email is required</span>-->
                         <label for="email ">abc@example.com </label>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="form-control-material ">
-                        <input id="password" name="passwordtype" ng-model="passwordtype" type="password " class="form-control " placeholder="Password" required>
-                        <!--<span ng-show="form.passwordtype.$touched && form.passwordtype.$invalid">Password is required</span>-->
+                        <input id="password" name="password" ng-model="c.password" type="password " class="form-control " placeholder="Password" required>
+                        <!--<span ng-show="form.password.$touched && form.password.$invalid">Password is required</span>-->
                         <label for="password ">Password</label>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="form-control-material ">
-                        <input id="passwordConfirmation " type="password " name="repass" ng-model="repass" class="form-control " placeholder="Password Confirmation" required>
+                        <input id="passwordConfirmation " type="password " name="repass" ng-model="c.repass" class="form-control " placeholder="Password Confirmation" required>
                         <!--<span ng-show="form.repass.$touched && form.repass.$invalid"> Re Password is required </span>-->
                       <label for="passwordConfirmation ">Re-type password</label>
                     </div>
@@ -200,11 +200,17 @@
                
                  <div class="form-group text-center ">
                     
-                        <input type="checkbox" id="agree "/>
+                        <input type="checkbox" ng-model="c.agree" id="agree "/>
                         <label for="agree ">* I Agree with <a href="# ">Terms &amp; Conditions!</a></label>
                     </div>
                 <div class="text-center ">
-                    <a ui-sref="website-student.dashboard" class="btn btn-primary ">Create an Account</a>
+                  <!-- 
+                    Note:
+                    ui-sref="website-student.dashboard"
+                     After completed validation on and frontend and backend then remove ui-sref then after form validate completetly , ui-sref is not needed in here i am writting for checking purpose
+                 -->
+                 <input type="submit" 
+                 ui-sref="website-student.dashboard" ng-click="submit(c)"  ng-disabled="!(form.firstname.$valid && form.firstname.$dirty) && (form.lastname.$valid && form.lastname.$dirty) && (form.email.$valid && form.email.$dirty) && (form.password.$valid && form.password.$dirty) && (form.repass.$valid && form.repass.$dirty)" class="btn btn-primary" value="Create an Account" />
                 </div>
 			</form>
 			<!-- //Signup -->
