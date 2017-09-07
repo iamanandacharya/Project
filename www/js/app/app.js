@@ -6043,7 +6043,6 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
-                    $stateProvider
                     .state('Forgot-Password', {
                         url: '/Forgot-Password',
                         templateUrl: 'website/Forgot-Password.html',
@@ -6052,10 +6051,18 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
-                      $stateProvider
+                      
                     .state('Forgot-Password-details', {
-                        url: '/Forgot-Password-detaild',
+                        url: '/Forgot-Password-details',
                         templateUrl: 'website/Forgot-Password-details.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = 'login';
+                        }]
+                    })
+                     .state('app-dashbord', {
+                        url: '/app-dashbord',
+                        templateUrl: 'website/app-dashbord.html',
                         controller: ['$scope', function($scope){
                             $scope.app.settings.htmlClass = htmlClass.websiteLogin;
                             $scope.app.settings.bodyClass = 'login';
@@ -6065,6 +6072,31 @@ require('./_sidebar-toggle');
                     .state('inst-sign-up', {
                         url: '/inst-sign-up',
                         templateUrl: 'website/inssign-up.html',
+                        controller: ['$scope', function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass = 'login';
+                        }]
+                    })
+                    .state('change-password',{
+                        url:'/change-password',
+                        templateUrl:'website/change-password.html',
+                        controller:['$scope',function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.settings.bodyClass='login';
+                        }]
+                    })
+                    .state('contact',{
+                        url:'/contact',
+                        templateUrl:'website/contact.html',
+                        controller:['$scope',function($scope){
+                            $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                            $scope.app.setting.bodyClass = 'login';
+                        }]
+                    })
+
+                    .state('logout', {
+                        url: '/logout',
+                        templateUrl: 'website/logout.html',
                         controller: ['$scope', function($scope){
                             $scope.app.settings.htmlClass = htmlClass.websiteLogin;
                             $scope.app.settings.bodyClass = 'login';

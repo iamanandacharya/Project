@@ -45,6 +45,37 @@ angular.module("starter.services", [])
    }
  }
 })
+.factory('Camera', function($q) {
+return {
+getPicture: function(options) {
+var q = $q.defer();
+navigator.camera.getPicture(function(result) {
+q.resolve(result);
+}, function(err) {
+q.reject(err);
+}, options);
+return q.promise;
+}
+}
+})
+
+
+// angular.module('services', [])
+// .service('UserService', function() {
+//   // For the purpose of this example I will store user data on ionic local storage but you should save it on a database
+//   var setUser = function(user_data) {
+//     window.localStorage.starter_facebook_user = JSON.stringify(user_data);
+//   };
+
+//   var getUser = function(){
+//     return JSON.parse(window.localStorage.starter_facebook_user || '{}');
+//   };
+
+//   return {
+//     getUser: getUser,
+//     setUser: setUser
+//   }
+// })
 
 //service - •	Gives us the instance of a function (object)- You just instantiated with the ‘new’ keyword and 
 //you’ll add properties to ‘this’ and the service will

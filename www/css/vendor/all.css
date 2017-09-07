@@ -5470,7 +5470,6 @@ a.list-group-item-danger.active:focus {
   padding: 16px;
 }
 .panel-body1 {
-  padding: 1px;
 }
 
 .panel-heading {
@@ -17140,7 +17139,7 @@ h2,
 .h2,
 h3,
 .h3 {
-  margin-top: 18px;
+  margin-top: 53px;
   margin-bottom: 9px;
 }
 h1 small,
@@ -17514,9 +17513,9 @@ pre code {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  margin-bottom:29px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: #d09cd9;
 }
 .row {
   margin-left: -20px;
@@ -19331,7 +19330,8 @@ tbody.collapse.in {
   left: 0;
   z-index: 1000;
   display: none;
-  float: left;
+  float: none;
+  width:182px;
   min-width: 160px;
   padding: 5px 7px;
   margin: 2px 0 0;
@@ -19356,7 +19356,7 @@ tbody.collapse.in {
   background-color: #e5e5e5;
 }
 .dropdown-menu > li > a {
-      display: block;
+    display: block;
     padding: 10px 40px 10px 40px;
     clear: both;
     font-weight: 400;
@@ -19365,11 +19365,23 @@ tbody.collapse.in {
     white-space: nowrap;
     background-color: #42a5f5; 
 }
+.dropdown-menu > li > .dropdownl-a {
+    display: block;
+    padding: 10px 40px 10px 40px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+    background-color: #42a5f5; 
+}
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5;
+  display: block;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -19748,6 +19760,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   font-size: 0;
   white-space: nowrap;
+  padding-left:15px;
 }
 .input-group-btn > .btn {
   position: relative;
@@ -19768,6 +19781,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-btn:last-child > .btn-group {
   margin-left: -1px;
 }
+
 .nav {
   margin-bottom: 0;
   padding-left: 0;
@@ -20032,7 +20046,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .container > .navbar-collapse,
   .container-fluid > .navbar-collapse {
     margin-right: -46px ;
-    margin-left: 0px;
+    margin-left: -12px;
   }
 }
 

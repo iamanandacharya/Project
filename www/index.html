@@ -88,8 +88,12 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!-- ionic/angularjs js -->
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
 
+<script src="lib/ngCordova/dist/ng-cordova.js"></script>
+<script src="cordova.js"></script>    
+
+
+<script src="js/abc.js"></script>
     <!-- your app's js -->
     <script src="js/app.js"></script>
    <script src="js/controllers.js"></script>
@@ -118,9 +122,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
  <ion-view >
    <ion-content>
      
-  <div data-ui-view class="ui-view-main">
-    
-  </div>
+  <div data-ui-view class="ui-view-main">    </div>
    </ion-content>
  </ion-view>
   
@@ -184,6 +186,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
         app.js already includes main.js so this should be loaded
         ONLY when using the standalone modules; -->
   <!-- <script src="js/app/main.js"></script> -->
+
 
 </body>
 

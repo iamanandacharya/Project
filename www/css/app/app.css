@@ -13,22 +13,52 @@ body.login #content {
   
   margin: 0;
   position: absolute;
-  top: 50px;
+  top: 51px;
   left: 0px;
   bottom: 0;
   right: 0;
+background-color:#d09cd9;
+  }
+
+body.login #contentsignup {
+      max-width: 1024px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #d09cd9;
   }
 body.login .lock-container {
-margin: 10px;
+margin: auto;
     width: 300px;
-    padding: 0px;
+    margin-bottom:80px
+  
+    
+}
+#loginbutton{
+width: 120px;  
+}
+#changepasswordid{
+  margin:35px;
 }
 
 /* ---- particles.js container ---- */
 
 @media (min-width: 480px) {
   body.login .lock-container {
-    bottom: 0;
+    bottom: 160px;
+    height: 550px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+@media (min-width: 1024px) {
+  body.login .lock-container {
+    bottom: 350px;
     height: 550px;
     left: 0;
     position: absolute;
@@ -402,10 +432,11 @@ body {
 }
 .text-display-1,
 .jumbotron h1 {
-  font-size: 2.61rem;
+  font-size: 1.61rem;
   font-weight: 400;
   line-height: 3.07rem;
 }
+
 .text-headline {
   font-size: 1.84rem;
   font-weight: 400;
@@ -6980,6 +7011,7 @@ ul.icon-list.icon-list-block li:not(:last-of-type) {
 }
 .margin-bottom-none {
   margin-bottom: 0 !important;
+  margin-right:80px;
 }
 .padding-none {
   padding: 0 !important;
@@ -11495,7 +11527,7 @@ span.fancytree-node.fancytree-active .fancytree-expander {
   font-size: 22px;
 }
 .cover.overlay .overlay *:last-child {
-  margin-bottom: 0;
+  margin-top: -15px;
 }
 .cover.overlay .overlay[class*="overlay-bg-white"] .text-overlay {
   text-shadow: none;
@@ -12480,8 +12512,8 @@ fieldset[disabled] .cover.overlay .btn-cover.active {
   margin-bottom: 1px !important;
 }
 .margin-v-0-15 {
-  margin-top: 0px !important;
-  margin-bottom: 15px !important;
+  margin-top: 10px !important;
+  margin-bottom: 3px !important;
 }
 .margin-v-0-14 {
   margin-top: 0px !important;
@@ -35421,12 +35453,13 @@ html.app-mobile #content .container-fluid {
 .navbar-fixed-top {
   
   margin-left:-20px;
-  margin-right:170px;
+  margin-right:0px;
 }
 #login-navbar {
   
   margin-left:1px;
   margin-right:0px;
+  
 }
 @media (min-width: 768px) {
   .navbar-right + .navbar-right {
@@ -35445,7 +35478,7 @@ html.app-mobile #content .container-fluid {
   margin-left: 0;
 }
 .navbar .container .navbar-right:last-of-type {
-  margin-right: -12px;
+  margin-right: 15px;
   margin-left:43px;
 }
 .panel-body > .navbar {

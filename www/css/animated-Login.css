@@ -6,19 +6,17 @@ ul li {
     display:inline-flex;
 	
 }
-
-
 h5, .h5 {
     font-size: 14px;
-    margin-left: 37px;
+    margin-left: 73px;
 }
  .write{
-	width:225px;
+	width:197px;
 	text-align: center;
 
 }
 .social_box{
-	width: 185px;
+	width: 190px;
     margin: 2px 2px 2px 19px;
     align-items: center;
 	

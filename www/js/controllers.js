@@ -1,5 +1,29 @@
 angular.module('starter.controllers', [])
 
+
+.controller('MyCtrl', function($scope, Camera) {
+$scope.takePhoto = function (options) {
+var options = {
+    quality: 50,
+          destinationType: $cordovaCamera.DestinationType.DATA_URL,
+          sourceType: $cordovaCamera.PictureSourceType.CAMERA,
+          allowEdit: true,
+          encodingType: $cordovaCamera.EncodingType.JPEG,
+          targetWidth: 100,
+          targetHeight: 100,
+          popoverOptions: $cordovaCamera.PopoverArrowDirection.ARROW_UP,
+          saveToPhotoAlbum: false,
+    	  correctOrientation:true
+};
+Camera.getPicture(options).then(function(imageData) {
+$scope.picture = imageData;;
+}, function(err) {
+console.log(err);
+});
+};
+})
+
+
 .controller('DashCtrl', function($scope) {})
 
 .controller('ChatsCtrl', function($scope, Chats) {

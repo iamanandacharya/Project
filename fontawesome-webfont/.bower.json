@@ -1,0 +1,7 @@
+{
+  "name": "fontawesome-webfont",
+  "main": "index.svg",
+  "_source": "I:\\webpack\\fontawesome-webfont.svg",
+  "_target": "*",
+  "_originalSource": "I:\\webpack\\fontawesome-webfont.svg"
+}
