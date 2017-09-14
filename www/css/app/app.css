@@ -281,6 +281,16 @@ body.survey .lock-container .panel .panel-footer .small {
   width: 106px;
   position: relative;
 }
+.navbar .navbar-brand-logo1 .svg {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  fill: #42a5f5;
+  height: 50px;
+  width: 106px;
+  position: relative;
+  margin-left:-59px;
+}
 .navbar .navbar-brand-logo .svg svg {
   pointer-events: none;
   display: block;
@@ -415,6 +425,14 @@ body {
   line-height: 1.53rem;
   font-size: 1rem;
 }
+
+.text-display-11,
+.jumbotron h1 {
+  font-size: 1.61rem;
+  font-weight: 400;
+  line-height: 3.07rem;
+margin-top:0px;
+}
 .text-display-4 {
   font-size: 8.6rem;
   font-weight: 300;
@@ -424,6 +442,7 @@ body {
   font-size: 4.3rem;
   font-weight: 400;
   line-height: 8.6rem;
+ 
 }
 .text-display-2 {
   font-size: 3.46rem;
@@ -435,7 +454,9 @@ body {
   font-size: 1.61rem;
   font-weight: 400;
   line-height: 3.07rem;
+
 }
+
 
 .text-headline {
   font-size: 1.84rem;
@@ -35466,6 +35487,35 @@ html.app-mobile #content .container-fluid {
     margin-right: 0;
   }
 }
+
+@media (min-width: 1440px) {
+  .navbar-right + .navbar-right {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .navbar .container-fluid .navbar-right:last-of-type {
+    margin-right: -20px;
+  }
+  .navbar-left-m {
+    margin-left: -20px;
+  }
+}
+.navbar .container .navbar-brand {
+  margin-left: 15px;
+}
+.navbar .container .navbar-right:last-of-type {
+  margin-right: 15px;
+  margin-left:43px;
+}
+.panel-body > .navbar {
+  margin-bottom: 0;
+}
+.navbar-nav .open > a,
+.navbar-nav .open > a:focus,
+.navbar-nav .open > a:hover {
+  background-color: transparent;
+}
 @media (min-width: 768px) {
   .navbar .container-fluid .navbar-right:last-of-type {
     margin-right: -20px;
@@ -35475,7 +35525,7 @@ html.app-mobile #content .container-fluid {
   }
 }
 .navbar .container .navbar-brand {
-  margin-left: 0;
+  margin-left: 9px;
 }
 .navbar .container .navbar-right:last-of-type {
   margin-right: 15px;
@@ -35713,6 +35763,12 @@ html.app-mobile #content .container-fluid {
     margin-left: 48px;
   }
 }
+
+@media (min-width:1440px) {
+  .navbar.navbar-size-large .navbar-nav-margin-left {
+    margin-left: 148px;
+  }
+}
 @media (min-width: 768px) and (min-width: 992px) {
   .navbar.navbar-size-large .navbar-nav-margin-right {
     margin-right: 15px;
@@ -35816,6 +35872,14 @@ html.app-mobile #content .container-fluid {
 .navbar .toggle {
   height: 50px;
   padding: 0 16px;
+  line-height: 50px;
+  display: inline-block;
+  font-size: 20px;
+}
+
+.navbar .toggle2 {
+  height: 50px;
+  padding: 0 60px;
   line-height: 50px;
   display: inline-block;
   font-size: 20px;

@@ -6062,7 +6062,7 @@ require('./_sidebar-toggle');
                     })
                      .state('app-dashbord', {
                         url: '/app-dashbord',
-                        templateUrl: 'website/app-dashbord.html',
+                        templateUrl: 'app/student-dashbord.html',
                         controller: ['$scope', function($scope){
                             $scope.app.settings.htmlClass = htmlClass.websiteLogin;
                             $scope.app.settings.bodyClass = 'login';

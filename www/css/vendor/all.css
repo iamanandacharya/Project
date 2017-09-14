@@ -20049,6 +20049,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: -12px;
   }
 }
+@media (min-width: 1440px) {
+  .container > .navbar-header,
+  .container-fluid > .navbar-header,
+  .container > .navbar-collapse,
+  .container-fluid > .navbar-collapse {
+    margin-right: -160px ;
+    margin-left: -137px;
+  }
+}
 
 .navbar-static-top {
   z-index: 1000;
@@ -20112,8 +20121,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 2px;
-  margin-left:42px;
+  margin-left:110px;
 }
+
 .navbar-toggle:focus {
   outline: 0;
 }
@@ -20131,6 +20141,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     display: none;
   }
 }
+
 .navbar-nav {
   margin: 8px 28px;
 }
