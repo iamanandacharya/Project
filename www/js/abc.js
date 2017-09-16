@@ -4,19 +4,16 @@ document.getElementById("cameraGetPicture").addEventListener("click", cameraGetP
 e1.addEventListener("click", cameraGetPicture);
 })
 function cameraGetPicture() {
-   navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
-      destinationType: Camera.DestinationType.DATA_URL,
-      sourceType: Camera.PictureSourceType.PHOTOLIBRARY
-   });
+   navigator.camera.getPicture(onSuccess, onFail, { 
+    quality:50,
+    targetWidth:200,
+    targetHeight:200,
+    sourceType:0
+   })
 
-   function onSuccess(imageURL) {
-      var image = document.getElementById('myImage');
-      image.src = imageURL;
-   }
+  
 
-   function onFail(message) {
-      alert('Failed because: ' + message);
-   }
+ 
 
 }
   </script>

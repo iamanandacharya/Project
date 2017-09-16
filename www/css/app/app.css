@@ -35528,7 +35528,7 @@ html.app-mobile #content .container-fluid {
   margin-left: 9px;
 }
 .navbar .container .navbar-right:last-of-type {
-  margin-right: 15px;
+  margin-right: -6px;
   margin-left:43px;
 }
 .panel-body > .navbar {

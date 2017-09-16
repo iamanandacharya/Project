@@ -6060,6 +6060,15 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
+                    .state('ChechkCamera',{
+                          url:'/ChechkCamera',
+                          templateUrl:'website/ChechkCamera.html',
+                          controller:['$scope',function($scope){
+                              $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                              $scope.app.setting.bodyClass = '';
+                          }]  
+                    })
+                        
                      .state('app-dashbord', {
                         url: '/app-dashbord',
                         templateUrl: 'app/student-dashbord.html',

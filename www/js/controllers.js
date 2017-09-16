@@ -2,18 +2,20 @@ angular.module('starter.controllers', [])
 
 
 .controller('MyCtrl', function($scope, Camera) {
-$scope.takePhoto = function (options) {
+$scope.takePicture = function (options) {
 var options = {
-    quality: 50,
-          destinationType: $cordovaCamera.DestinationType.DATA_URL,
-          sourceType: $cordovaCamera.PictureSourceType.CAMERA,
-          allowEdit: true,
-          encodingType: $cordovaCamera.EncodingType.JPEG,
-          targetWidth: 100,
-          targetHeight: 100,
-          popoverOptions: $cordovaCamera.PopoverArrowDirection.ARROW_UP,
-          saveToPhotoAlbum: false,
-    	  correctOrientation:true
+    quality:50,
+    targetWidth:200,
+    targetHeight:200,
+    sourceType:0
+        //   destinationType: $cordovaCamera.DestinationType.FILE_URI,
+        //   sourceType: $cordovaCamera.PictureSourceType.CAMERA,
+        //   allowEdit: true,
+        //   encodingType: $cordovaCamera.EncodingType.JPEG,
+        //   targetWidth: 100,
+        //   targetHeight: 100,
+        //   saveToPhotoAlbum: true,
+    	  // correctOrientation:true
 };
 Camera.getPicture(options).then(function(imageData) {
 $scope.picture = imageData;;
