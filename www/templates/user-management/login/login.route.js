@@ -1,9 +1,12 @@
 angular.module('starter.controllers')
-  .config(['$stateProvider', function ($stateProvider) {
+.config(['$stateProvider',function($stateProvider){
     $stateProvider
-      .state('login', {
-        url: '/login',
-        templateUrl: 'templates/user-management/login/animated_login_screen.html',
-        controller: 'LoginCtrl'
-      })
-  }]);
+        .state('login', {
+            url: '/login',
+            templateUrl:'/user-management/login.html',
+            controller: ['$scope', function($scope){
+                $scope.app.settings.htmlClass = htmlClass.websiteLogin;
+                $scope.app.settings.bodyClass = 'login';
+            }]
+        })
+}]);

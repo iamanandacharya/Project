@@ -1,29 +1,49 @@
 angular.module('starter.controllers', [])
 
 
-.controller('MyCtrl', function($scope, Camera) {
-$scope.takePicture = function (options) {
-var options = {
-    quality:50,
-    targetWidth:200,
-    targetHeight:200,
-    sourceType:0
-        //   destinationType: $cordovaCamera.DestinationType.FILE_URI,
-        //   sourceType: $cordovaCamera.PictureSourceType.CAMERA,
-        //   allowEdit: true,
-        //   encodingType: $cordovaCamera.EncodingType.JPEG,
-        //   targetWidth: 100,
-        //   targetHeight: 100,
-        //   saveToPhotoAlbum: true,
-    	  // correctOrientation:true
-};
-Camera.getPicture(options).then(function(imageData) {
-$scope.picture = imageData;;
-}, function(err) {
-console.log(err);
-});
-};
-})
+
+.controller("CameraController", function ($scope, $cordovaCamera) {
+  
+                  $scope.takePhoto = function () {
+                    var options = {
+                      quality: 75,
+                      destinationType: Camera.DestinationType.DATA_URL,
+                      sourceType: Camera.PictureSourceType.CAMERA,
+                      allowEdit: true,
+                      encodingType: Camera.EncodingType.JPEG,
+                      targetWidth: 300,
+                      targetHeight: 300,
+                      popoverOptions: CameraPopoverOptions,
+                      saveToPhotoAlbum: false
+                  };
+     
+                      $cordovaCamera.getPicture(options).then(function (imageData) {
+                          $scope.imgURI = "data:image/jpeg;base64," + imageData;
+                      }, function (err) {
+                          // An error occured. Show a message to the user
+                      });
+                  }
+                  
+                  $scope.choosePhoto = function () {
+                    var options = {
+                      quality: 75,
+                      destinationType: Camera.DestinationType.DATA_URL,
+                      sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
+                      allowEdit: true,
+                      encodingType: Camera.EncodingType.JPEG,
+                      targetWidth: 300,
+                      targetHeight: 300,
+                      popoverOptions: CameraPopoverOptions,
+                      saveToPhotoAlbum: false
+                  };
+     
+                      $cordovaCamera.getPicture(options).then(function (imageData) {
+                          $scope.imgURI = "data:image/jpeg;base64," + imageData;
+                      }, function (err) {
+                          // An error occured. Show a message to the user
+                      });
+                  }
+              })
 
 
 .controller('DashCtrl', function($scope) {})
