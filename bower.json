@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/iamanandacharya/Project",
   "authors": [
-    "iamanandacharya <anandacharyadx3555@gmail.com>"
+    "y"
   ],
   "description": "",
   "main": "",
-  "license": "MIT",
+  "license": "y",
   "ignore": [
     "**/.*",
     "node_modules",

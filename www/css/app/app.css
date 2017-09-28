@@ -7011,8 +7011,7 @@ ul.icon-list.icon-list-block li:not(:last-of-type) {
   padding-right: 10px;
 }
 .media-body > *:last-child {
-  margin-bottom: 0;
-  height: 163px;
+  
 }
 .media.media-overflow-visible {
   overflow: visible;

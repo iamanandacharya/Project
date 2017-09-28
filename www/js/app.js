@@ -38,11 +38,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
     $stateProvider
 
       // setup an abstract state for the tabs directive
-      // .state('tab', {
-      //   url: '/tab',
-      //   abstract: true,
-      //   templateUrl: 'templates/tabs.html'
-      // })
+      .state('location', {
+        url: '/loaction',
+        abstract: true,
+        templateUrl: 'www/location.html',
+        controller:'MapController'
+      })
 
     // Each tab has its own nav history stack:
     // if none of the above states are matched, use this as the fallback

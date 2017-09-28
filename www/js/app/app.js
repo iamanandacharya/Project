@@ -6102,6 +6102,16 @@ require('./_sidebar-toggle');
                             $scope.app.setting.bodyClass = 'login';
                         }]
                     })
+                    // .state('location',{
+                    //     url:'/location',
+                    //     templateUrl:'website/location.html',
+                    //     abstract:true,
+                    //     controller:['$scope',function($scope){
+                    //         $scope.app.settings.htmlClass=htmlClass.websiteLogin;
+                    //         $scope.app.settings.bodyClass = 'login';
+                    //     }]
+                    // })
+
 
                     .state('logout', {
                         url: '/logout',
