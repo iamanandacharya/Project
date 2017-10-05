@@ -6,7 +6,7 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 
-angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','ngCordova'])
+angular.module('app', ['ionic', 'starter.controllers', 'starter.services','ngCordova'])
 
   .run(function ($ionicPlatform) {
 
@@ -38,12 +38,13 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
     $stateProvider
 
       // setup an abstract state for the tabs directive
-      .state('location', {
-        url: '/loaction',
-        abstract: true,
-        templateUrl: 'www/location.html',
-        controller:'MapController'
-      })
+     
+     
+    //   .state('location',{
+    //     url:'/location',
+    //     templateUrl:'website/location.html',
+    //     controller:'MapController'
+    // })
 
     // Each tab has its own nav history stack:
     // if none of the above states are matched, use this as the fallback
@@ -51,3 +52,4 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services','n
     $urlRouterProvider.otherwise('/login');
     
   });
+  

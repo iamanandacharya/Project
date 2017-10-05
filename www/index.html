@@ -110,6 +110,7 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
 <script src="js/vendor/all.js"></script>
  <script src="js/app/colors.js"></script>
 <script src="js/app/app.js"></script>
+<script src="js/app/controller.js"></script>
     
     
 
@@ -132,7 +133,11 @@ WARNING: Respond.js doesn't work if you view the page via file:// -->
 </head>
 
 <body ng-class="app.settings.bodyClass">
- <ion-view >
+  <!-- This ng class can not run 
+    <body ng-app="starter">
+      </body> -->
+ 
+    <ion-view >
    <ion-content>
      
   <div data-ui-view class="ui-view-main">    </div>
