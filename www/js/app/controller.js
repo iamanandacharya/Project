@@ -1,4 +1,45 @@
-angular.module('app.controller',[])
+angular.module('app',[,'ionic','ngCordova'])
+
+.controller('CameraCtrl',function($scope,$cordovaCamera){
+    $scope.takePhoto = function(){
+        var options= {
+            quality:75,
+            destinationType:Camera.DestinationType.DATA_URL,
+            sourceType:Camera.PictureSourceType.CAMERA,
+            allowEdit:true,
+            encodingType:Camera.EncodingType.JPEG,
+            targetWidth:300,
+            targetHeight:300,
+            popoverOptions:CameraPopoverOptions,
+            saveToPhotoAlbums:false
+        };
+        $cordovaCamera.getPicture(options).then(function(imageData){
+            $scope.imgURI = "data:image/jpeg;base64," + imageData;
+        },
+        function(err){
+
+        });
+    }
+$scope.choosePhoto= function(){
+    var options = {
+        quality:75,
+        destinationType:Camera.DestinationType.DATA_URL,
+        sourceType:Camera.PictureSourceType.PHOTOLIBRARY,
+        allowEdit:true,
+        encodingType:Camera.EncodingType.JPEG,
+        targetWidth:300,
+        targetHeight:300,
+        popoverOptions:CameraPopoverOptions,
+        saveToPhotoAlbums:false
+    };
+    $cordovaCamera.getPicture(options).then(function(imageData){
+        $scope.imgURI = "data:image/jpeg;base64"+ imageData;
+    },
+    function(err){
+
+    });
+}
+})
 .controller('MapController', function($scope, $cordovaGeolocation, $ionicLoading, $ionicPlatform,$state) {
     
    $ionicPlatform.ready(function() {    

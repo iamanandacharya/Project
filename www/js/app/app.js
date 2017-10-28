@@ -5986,7 +5986,7 @@ require('./_sidebar-toggle');
         'ngTouch',
         'ui.router',
         'ui.utils',
-        'ui.jq'
+        'ui.jq',
     ]);
 
     var app = angular.module('app')
@@ -6060,13 +6060,10 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
-                    .state('ChechkCamera',{
-                          url:'/ChechkCamera',
-                          templateUrl:'website/ChechkCamera.html',
-                          controller:['$scope',function($scope){
-                              $scope.app.settings.htmlClass = htmlClass.websiteLogin;
-                              $scope.app.setting.bodyClass = '';
-                          }]  
+                    .state('Profile',{
+                          url:'/profile',
+                          templateUrl:'website/profile.html',
+                          controller: 'CameraCtrl',
                     })
                         
                      .state('app-dashbord', {
@@ -6728,6 +6725,25 @@ require('./_sidebar-toggle');
     );
 
 })();
+
+},{}],"/Code/html/themes/learning-1.1.0/src/js/themes/angular/angular/directives/countdown.js":[function(require,module,exports){
+    (function () {
+        "use strict";
+    
+        angular.module('app')
+            .directive('tkCountdown', [ function () {
+                return {
+                    restrict: 'C',
+                    link: function (scope, el) {
+                        el.tkCountdown();
+                        scope.$on("$destroy", function(){
+                            el.countdown('pause');
+                        });
+                    }
+                };
+            } ]);
+    
+    })();
 },{}],"/Code/html/themes/learning-1.1.0/src/js/themes/angular/angular/directives/countdown.js":[function(require,module,exports){
 (function () {
     "use strict";
@@ -6818,8 +6834,9 @@ require('./_sidebar-toggle');
 
                 $scope.$state = $state;
 
-            } ]);
+            } ])
 
+        
 })();
 
 },{}],"/Code/html/themes/learning-1.1.0/src/js/themes/angular/main.js":[function(require,module,exports){

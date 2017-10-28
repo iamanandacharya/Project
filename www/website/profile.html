@@ -1,0 +1,13 @@
+<ion-view view-title="profile-view">
+    <ion-content ng-controller="CameraCtrl" padding="true">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <button class="button button-block" type="file" ng-click="takePhoto()">Take Photo</button>
+            </label>
+            <button class="button  button-block"  type="file" ng-click="choosePhoto()">Choose Photo</button>
+        </div>
+        <div id="">
+                <img ng-show="imgURI !== undefined" ng-src="{{imgURI}}" id="camera-display-id">
+            </div>
+    </ion-content>
+</ion-view>

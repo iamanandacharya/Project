@@ -3672,6 +3672,27 @@ tbody.collapse.in {
   margin-bottom: 2px;
 }
 @media (min-width: 768px) {
+  .dropdown-menu{
+    position: fixed;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: none;
+    width: 182px;
+    min-width: 160px;
+    padding: 5px 7px;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 13px;
+    text-align: left;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 2px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+  }
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -19406,7 +19427,7 @@ tbody.collapse.in {
 }
 .open > .dropdown-menu {
   display: block;
-}
+  }
 .open > a {
   outline: 0;
 }
