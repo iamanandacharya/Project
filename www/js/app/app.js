@@ -6060,11 +6060,7 @@ require('./_sidebar-toggle');
                             $scope.app.settings.bodyClass = 'login';
                         }]
                     })
-                    .state('Profile',{
-                          url:'/profile',
-                          templateUrl:'website/profile.html',
-                          controller: 'CameraCtrl',
-                    })
+                    
                         
                      .state('app-dashbord', {
                         url: '/app-dashbord',

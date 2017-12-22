@@ -1,6 +1,6 @@
-angular.module('app',[,'ionic','ngCordova'])
 
-.controller('CameraCtrl',function($scope,$cordovaCamera){
+app.controller('CameraCtrl', function ($scope,$cordovaCamera, $rootScope, $http, $cookieStore, $location) {
+    
     $scope.takePhoto = function(){
         var options= {
             quality:75,
